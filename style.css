@@ -50,12 +50,10 @@ body{
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-
 }
 
 section {
-    padding: 7em 2em;
-
+    padding: 5em 2em;
 }
 
 img{
@@ -276,15 +274,33 @@ header {
     position: relative;
 }
 
-.section__title--services::after {
+.section__title--underline::after {
     content: '';
     display: block;
-    width: 3em;
+    width: 6em;
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
     opacity: 0.25;
 }
+
+.section__title--education {
+    color: black;
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.section__title--education::after {
+    content: '';
+    display: block;
+    width: 6em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.25;
+}
+
 
 .services {
     margin-bottom: 4em;
@@ -399,7 +415,7 @@ header {
     background: #03060b;
     color: #F7F7F7;
     text-align: center;
-    padding: 2.5em 0;
+    padding: 0.5em 0;
     font-size: var(--fs-h3);
 }
 
@@ -425,7 +441,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     padding: 0;
 }
 
@@ -501,7 +517,7 @@ header {
 .education-section {
     background-color: #F7F7F7;
     display: grid;
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 1fr 80px;
     color: black;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -510,11 +526,12 @@ header {
     padding-right: 2em;
 }
 
-.education-institution > p{
+.education-institution p{
     margin-top: 0;
 }
 
 .education-institution {
     display: grid;
     grid-template-columns: 1fr 300px;
+    margin-bottom: 1.5em;
 }
