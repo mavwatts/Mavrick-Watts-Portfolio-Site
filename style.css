@@ -158,7 +158,7 @@ header {
     max-width: 240px;
 }
 
-.logo > img {
+.logo img {
     padding-left: 1em;
     
 }
@@ -196,7 +196,7 @@ header {
 }
 
 .nav__link:hover {
-    color: #151515;
+    color: #d5322d;
 }
 
 .nav-toggle {
@@ -239,7 +239,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: black;
+    background: #d5322d;
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -281,7 +281,6 @@ header {
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
-    opacity: 0.25;
 }
 
 .section__title--education {
@@ -295,17 +294,15 @@ header {
     content: '';
     display: block;
     width: 6em;
-    height: 1px;
+    height: 2px;
     margin: 0.5em auto 1em;
-    background: var(--clr-dark);
-    opacity: 0.25;
+    background: red;
 }
 
 
 .services {
     margin-bottom: 4em;
     width: 90vw;
-
 }
 
 .service {
@@ -403,11 +400,15 @@ header {
     z-index: 2;
 }
 
+.portfolio__title {
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+
 .portfolio__img:hover, 
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .75;
-    
 }
 
 /*footer*/
@@ -417,6 +418,7 @@ header {
     text-align: center;
     padding: 0.5em 0;
     font-size: var(--fs-h3);
+    border-top: 1px solid white;
 }
 
 .footer a {
@@ -426,15 +428,6 @@ header {
 
 .footer__link {
     font-weight: var(--fw-bold);
-}
-
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
-}
-
-.footer__link:hover {
-    text-decoration: underline;
 }
 
 .social-list {
@@ -447,11 +440,15 @@ header {
 
 .social-list__item {
     margin: 0 .5em;
-
 }
 
 .social-list__link {
     padding: .5em;
+    transition: 0.5s;
+}
+
+.social-list__link:hover {
+    color: #d5322d;
 }
 
 /* Individual portfolio item styles */
@@ -478,7 +475,11 @@ header {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.portfolio-item-repo-link h4{
+    margin: 2.5em 0 0.5em 0;
 }
 
 .portfolio-item-repo-link a {
@@ -522,7 +523,7 @@ header {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     max-width: 90vw;
-    padding-left: 2em;
+    padding-left: 3em;
     padding-right: 2em;
 }
 
