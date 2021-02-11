@@ -146,7 +146,7 @@ h3 {
 .section__title--work {
     color: #F7F7F7;
     font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .section-chapter-title {
@@ -532,9 +532,14 @@ header {
     padding: 0;
 }
 
+.portfolio_introduction_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .portfolio_introduction{
-    width: 50%;
-    
+    width: 60%;
 }
 
 @media (max-width: 800px){
