@@ -203,7 +203,7 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
+    background: #161616;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -515,6 +515,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .portfolio-item-repo-link {
     max-width: 1000px;
