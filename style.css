@@ -188,8 +188,10 @@ header {
         display: flex;
         justify-content: space-between;
         background-color: #fff;
-        height: 7.5em;
+        height: 8em;
     }
+
+
 }
 
 .logo {
