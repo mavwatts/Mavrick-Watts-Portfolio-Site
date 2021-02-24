@@ -36,12 +36,13 @@ html {
 
 
 body{
-    background: #03060b;
-    color: #F7F7F7;
+    background: #f1f1f1;
+    color: #000000;
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    
 }
 
 section {
@@ -148,9 +149,21 @@ h3 {
 
 /* header */
 
+.bg-light{
+    background-color: #191919!important;
+}
+
+.nav-link{
+    color: #fff!important;
+}
+
+.nav-link:hover{
+    color: rgb(238, 21, 21)!important;
+}
+
 .navbar-collapse {
     align-items: center;
-    width: 30%;
+    width: 36%;
 }
 
 header {
@@ -226,14 +239,14 @@ header {
     color: #d5322d;
 }
 
-.nav-toggle {
+.nav-toggler {
     padding: .5em;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 4em;
-    top: 3em;
+    top: 4em;
     z-index: 1000;
 }
 
@@ -241,7 +254,7 @@ header {
     transform: translateX(0);
 }
 
-.nav-open .nav-toggle {
+.nav-open .nav-toggler {
     position: fixed;
 }
 
@@ -387,7 +400,6 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
-        box-shadow: var(--bs);
     }
 
     .about-me h2{
@@ -580,6 +592,7 @@ header {
 
 .skills-section h2 {
     text-align: center;
+    color: white;
 }
 
 .skills_wrapper{
@@ -644,18 +657,20 @@ header {
         padding-right: 2em;
     }
 
-    #ivy_tech{
-        color:green
+    li{
+        font-size: 24px;
     }
 
-    #iupui{
-        color: red
+    .nav-toggler {
+        padding: .5em;
+        position: absolute;
+        right: 2em;
+        top: 4em;
     }
 
-    #kenzie_academy{
-        color: blue
-    }
-
+   .skills-section{
+       display: block;
+   }
 }
 
 @media (min-width: 800px){
@@ -681,6 +696,16 @@ header {
 
     .services + .services {
         margin-left: 4em;
+    }
+
+
+    .nav-toggler-icon{
+        display: none;
+    }
+
+    .nav-toggler{
+        display: none;
+
     }
 }
 
@@ -720,4 +745,5 @@ header {
         display: flex;
         flex-direction: column;
     }
+
 }
