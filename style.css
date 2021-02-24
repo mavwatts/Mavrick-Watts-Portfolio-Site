@@ -587,7 +587,8 @@ header {
 /* skills section  */
 .skills-section{
     width: 100vw;
-    background-color: #03060c; 
+    background-color: #070d1b; 
+    border-top: 1px solid white;
 }
 
 .skills-section h2 {
@@ -611,21 +612,11 @@ header {
 
 .card > img {
     width: 8em;
-    background-color: #03060c;
+    background-color: #070d1b;
 }
 
 
 /* Responsive site code below */
-
-/* @media (min-width: 800px){
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.25rem;
-    }
-} */
-
 
 /* Phone breakpoint */
 @media only screen and (max-width: 799px){
@@ -671,6 +662,14 @@ header {
    .skills-section{
        display: block;
    }
+
+   .skills_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    row-gap: 1em;
+    width: 100%;
+    }
 }
 
 @media (min-width: 800px){
