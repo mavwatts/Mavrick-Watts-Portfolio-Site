@@ -26,8 +26,8 @@
      <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
-    <header>
-        <div class='logo' >
+    <!-- <header> -->
+        <!-- <div class='logo' >
             <a href='index.html'><img src='images/signature_sm.png' alt='Mavrick_Watts_Signature'></a>
         </div>
         <button class='nav-toggle' aria-label="toggle navigation">
@@ -40,8 +40,43 @@
                 <li class='nav__item'><a href='#portfolio' class='nav__link'>Portfolio</a></li>
                 <li class='nav__item'><a href='#education' class='nav__link'>Education</a></li>
             </ul>
-        </nav>
-    </header>
+        </nav> -->
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class='logo' >
+                    <a href='index.html'><img src='images/signature_sm.png' alt='Mavrick_Watts_Signature'></a>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                
+                
+                
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+        
+    <!-- </header> -->
 
    
     
@@ -127,12 +162,13 @@
         </div><!--Close services-->
     </section>
 
-    <!--My Work-->
+    <!--Portfolio -->
+    <section class='my-work' id='projects' >
+        <h2 class='section__title section__title--work section__title--underline'>PROJECTS</h2>
 
-    <section class='my-work' id='portfolio' >
-        <h2 class='section__title section__title--work section__title--underline'>PORTFOLIO</h2>
         <div class='portfolio_introduction_wrapper'>
-        <p class='portfolio_introduction'>This is a selection of projects I have worked on. I grow as designer by collaboration, research, advice, and by focusing on providing solutions to problems clients may have.</p></div>
+        <p class='portfolio_introduction'>This is a selection of projects I have worked on. I grow as designer by collaboration, research, advice, and by focusing on providing solutions to problems clients may have.</p>
+        </div>
         
 
         <div class='portfolio'>
@@ -172,13 +208,38 @@
             </div>
     </section>
 
+    <section class='skills-section' id='skills'>
+        <h2 class='section__title  section__title--underline'>SKILLS</h2>
+
+        <div class='skills_wrapper'>
+            <div class="card" style="width: 10rem;">
+                <img src="images/html_logo.png" class="card-img-top" alt="html">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="images/css_logo.png" class="card-img-top" alt="css">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="images/javascript_logo.png" class="card-img-top" alt="javascript">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="images/react_logo.png" class="card-img-top" alt="React">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="images/bootstrap_logo.png" class="card-img-top" alt="html">
+            </div>
+        </div>
+         
+          
+    </section>
+
+        <!-- Education Section  -->
     <section class='education' id='education'>
         <h2 class='section__title section__title--underline section__title--education'>EDUCATION</h2>
 
         <div class='education-section'>
                 <div class='education-institution'>
                     <div>
-                        <h3>KENZIE ACADEMY</h3>
+                        <h3 id='kenzie_academy'>KENZIE ACADEMY</h3>
                         <p>Software Engineering</p>
                         <ul>
                             <li>Front-end Certiciate</li>
@@ -192,7 +253,7 @@
                 <br>
                 <div class='education-institution'>
                     <div>
-                        <h3>IUPUI (Indiana University Purdue University)</h3>
+                        <h3 id='iupui'>IUPUI (Indiana University Purdue University)</h3>
                         <p>Informatics: New Media</p>
                         <ul>
                             <li>Bachelor's Degree of Science</li>
@@ -204,7 +265,7 @@
                 <br>
                 <div class='education-institution'>
                     <div>
-                        <h3>IVY TECH COMMUNITY COLLEGE</h3>
+                        <h3 id='ivy_tech'>IVY TECH COMMUNITY COLLEGE</h3>
                         <p>Computer Information Technology</p>
                         <ul>
                             <li>Associate's Degree of Science</li>

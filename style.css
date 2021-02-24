@@ -27,14 +27,6 @@
            0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px){
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.25rem;
-    }
-}
 
 /* General Styles */
 
@@ -156,6 +148,11 @@ h3 {
 
 /* header */
 
+.navbar-collapse {
+    align-items: center;
+    width: 30%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -182,24 +179,12 @@ header {
     width: 0%;
   }
 
-
-@media (max-width: 800px){
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #fff;
-        height: 8em;
-    }
-
-
-}
-
 .logo {
     max-width: 240px;
 }
 
 .logo img {
-    padding-left: 1em;
+    margin-left: 4em;
     
 }
 
@@ -247,7 +232,7 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
+    right: 4em;
     top: 3em;
     z-index: 1000;
 }
@@ -357,20 +342,6 @@ header {
     padding-right: 2em;
 }
 
-@media (min-width: 800px){
-    .services {
-        display: flex;
-        max-width: 2000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .services + .services {
-        margin-left: 4em;
-
-    }
-}
-
 .about-me {
     max-width: 1300px;
     margin: 0 auto;
@@ -418,6 +389,10 @@ header {
         z-index: 2;
         box-shadow: var(--bs);
     }
+
+    .about-me h2{
+        line-height: 1em;
+    }
 }
 
 /* My Work */
@@ -432,6 +407,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+
 
 .portfolio__item {
     overflow: hidden;
@@ -566,23 +543,6 @@ header {
     width: 60%;
 }
 
-@media (max-width: 800px){
-    .my-work{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .portfolio_introduction{
-        font-family: var(--ff-primary);
-        font-size: 2em;
-    }
-
-    .portfolio {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /* Education */
 
 .education {
@@ -612,10 +572,152 @@ header {
     margin-bottom: 1.5em;
 }
 
-@media (max-width: 800px){
-    .education-institution {
-    display: grid;
-    grid-template-columns: 1fr;
+/* skills section  */
+.skills-section{
+    width: 100vw;
+    background-color: #03060c; 
 }
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.skills_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    row-gap: 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.card{
+    height: 10em;
+    background-color: transparent;
+}
+
+.card > img {
+    width: 8em;
+    background-color: #03060c;
+}
+
+
+/* Responsive site code below */
+
+/* @media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.25rem;
+    }
+} */
+
+
+/* Phone breakpoint */
+@media only screen and (max-width: 799px){
+    h3 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    .education-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6;
+        width: 100vw;
+        text-align: center;
+
+    }
+    .education-institution img{
+        display: none;
+    }
+
+    .education-institution ul{
+        padding-right: 2em;
+    }
+
+    #ivy_tech{
+        color:green
+    }
+
+    #iupui{
+        color: red
+    }
+
+    #kenzie_academy{
+        color: blue
+    }
+
+}
+
+@media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.25rem;
+    }
     
+    .portfolio_introduction_wrapper{
+        width: 100vw;
+        text-align: center;
+        padding-right: 5em;
+    }
+
+    .services {
+        display: flex;
+        max-width: 2000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services + .services {
+        margin-left: 4em;
+    }
+}
+
+@media (max-width: 800px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 9em;
+    }
+
+    .section__title--about{
+        text-align: center;
+    }
+
+    .about-me p {
+        text-align: center;
+    }
+
+    .my-work{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-institution {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio_introduction{
+        font-family: var(--ff-primary);
+        font-size: 2em;
+        width: 85%;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+    }
 }
